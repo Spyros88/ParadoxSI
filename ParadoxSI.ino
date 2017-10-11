@@ -1,4 +1,4 @@
-//Paradox Serial Interface *tested in SP5500 panel.
+//Paradox Serial Interface *tested on SP5500 panel.
 
 #include <SoftwareSerial.h>
 uint8_t Status = 0;        //0= unarmed 1= Armed 2= Sleep 3= Stay
@@ -38,7 +38,7 @@ void moveArray(){       //no point
 for(int i=0; i<=36; i++){
 newdata[i] = data[i];
   }
- }
+}
 
  void getdata(){
 uint8_t e_month;
@@ -104,4 +104,4 @@ void printZones(){
   for(int i=1; i<=10; i++){
     Serial.print(Zones[i]);
     }
-  }
+}
